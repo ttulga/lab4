@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="City of Pawnee Parks Department Home Page">
+		<meta name="author" content="ttulga">
+		<meta name="viewport" content="width=device-width, intial-scale=1.0">
+		<link rel="shortcut icon" href="img/logo.png">
+		<title>Pawnee Parks Department</title>
+
+		<!-- hot link to Bootstrap stylesheet -->
+	    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+
+	    <!-- our own stylesheet for overrides -->
+	    <link rel="stylesheet" href="css/styles.css">
+	</head>
+	<body>
+		<div class="container">
+			<nav class="navbar navbar-default" rold="navigation">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".pawnee-navbar-menu">
+						<span class="sr-only">Toggle Navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">Pawnee Parks <img src="img/logo.png" alt="Parks Logo"></a>
+				</div>
+
+				<div class="collapse navbar-collapse pawnee-navbar-menu">
+					<ul class="nav navbar-nav">
+			            <li class="active"><a href="#">Home</a></li>
+			            <li><a href="#">Parks</a></li>
+			            <li><a href="#">Community Center</a></li>
+			            <li><a href="#">Harvest Festival</a></li>
+			        </ul>
+				</div>
+			</nav>
+
+			<div id="pawnee-carousel" class="carousel slide">
+				<!-- slide indicators -->
+			    <ol class="carousel-indicators">
+			        <li data-target="#pawnee-carousel" data-slide-to="0" class="active"></li>
+			        <li data-target="#pawnee-carousel" data-slide-to="1"></li>
+			        <li data-target="#pawnee-carousel" data-slide-to="2"></li>
+			        <li data-target="#pawnee-carousel" data-slide-to="3"></li>
+			    </ol>
+
+			    <!-- slides -->
+			    <div class="carousel-inner">
+			    	<div class="item active">
+			    		<img src="img/summer-park.jpg" alt="Summer in the Park">
+			    		<div class="carousel-caption">
+			    			<p>Summer in our Parks!</p>
+			    		</div>
+			    	</div>
+
+			    	<div class="item">
+			    		<img src="img/autumn-park.jpg" alt="Autumn Leafs">
+			    		<div class="carousel-caption">
+			    			<p>Autumn Leafs</p>
+			    		</div>
+			    	</div>
+
+			    	<div class="item">
+			    		<img src="img/winter-park.jpg" alt="Winter Breeze">
+			    		<div class="carousel-caption">
+			    			<p>Winter Breeze</p>
+			    		</div>
+			    	</div>
+
+			    	<div class="item">
+			    		<img src="img/spring-park.jpg" alt="Spring Cleaning">
+			    		<div class="carousel-caption">
+			    			<p>Spring Cleaning</p>
+			    		</div>
+			    	</div>
+			    </div> <!-- slides -->
+
+			    <!-- left/right controls -->
+			    <a class="left carousel-control" href="#pawnee-carousel" data-slide="prev">
+			    	<span class="icon-prev"></span>
+			    </a>
+			    <a class="right carousel-control" href="#pawnee-carousel" data-slide="next">
+			    	<span class="icon-next"></span>
+			    </a>
+			</div> <!-- carousel -->
+
+			<!-- row -->
+			<div class="row">
+				<div class="col-md-4">
+					<h2><a href="#">Parks</a></h2>
+					<img src="img/parks.png" alt="dog in park" class=col-pic>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+
+				<div class="col-md-4">
+					<h2><a href="#">Community Center</a></h2>
+					<img src="img/community.jpg" alt="community center" class=col-pic>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+
+				<div class="col-md-4">
+					<h2><a href="#">Harvest Festival</a></h2>
+					<img src="img/harvest.jpg" alt="harvest festival" class=col-pic>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</div> <!-- row -->
+		</div>
+
+		<!-- hot links to Bootstrap JavaScript and jQuery (required by Bootstrap) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+		<!-- auto-play the carousel -->
+	    <script>
+	        $('.carousel').carousel();
+	    </script>
+	</body>
+</html>
